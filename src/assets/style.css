@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #000;
+    font-size: 16px;
+    line-height: 1.3;
+    background: #fff;
+}
+.main{
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 50px 20px;
+}
+.products{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.product{
+    width: 100%;
+    padding: 20px;
+    background: #393434;
+}
+.productimage{
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.productimage img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.userbox{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    position: absolute;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+.round-image{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.round-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+}
+.username h3{
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.username span{
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+}
+.datebox{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.datebox p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.datebox p span{
+    color: #fff;
+    font-weight: 600;
+}
+.informationarea{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.information{
+    display: flex;
+    padding: 20px 10px;
+    background: #414141;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.information strong{
+    color: #fff;
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+.information span{
+    display: block;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
